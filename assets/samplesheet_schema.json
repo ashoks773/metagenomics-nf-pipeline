@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "https://raw.githubusercontent.com/yourusername/metagenomics-nf-pipeline/main/assets/samplesheet_schema.json",
+  "title": "Metagenomic Pipeline Samplesheet Schema",
+  "description": "Schema for validating samplesheet input",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "sample": {
+        "type": "string",
+        "pattern": "^[a-zA-Z0-9_-]+$",
+        "description": "Unique sample identifier. Must contain only alphanumeric characters, hyphens, or underscores."
+      },
+      "fastq_1": {
+        "type": "string",
+        "pattern": "^\\S+\\.f(ast)?q\\.gz$",
+        "description": "Path to forward reads FASTQ file (R1). Must be gzipped."
+      },
+      "fastq_2": {
+        "type": "string",
+        "pattern": "^\\S+\\.f(ast)?q\\.gz$",
+        "description": "Path to reverse reads FASTQ file (R2). Must be gzipped."
+      }
+    },
+    "required": ["sample", "fastq_1", "fastq_2"]
+  }
+}
