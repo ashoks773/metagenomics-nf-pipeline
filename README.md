@@ -351,8 +351,8 @@ If you use this pipeline, please cite:
 ## Contact
 
 For questions or issues:
-- GitHub Issues: [Your Repository]
-- Email: ashoks773@gmail.com
+- GitHub Issues: https://github.com/ashoks773/metagenomics-nf-pipeline
+- Email: ashoks773@gmail.com OR compbiosharma@gmail.com
 
 ## License
 
