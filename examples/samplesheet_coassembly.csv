@@ -1,0 +1,7 @@
+cat > examples/samplesheet_coassembly.csv << 'EOF'
+sample,fastq_1,fastq_2
+healthy_1,/data/healthy_1_R1.fastq.gz,/data/healthy_1_R2.fastq.gz
+healthy_2,/data/healthy_2_R1.fastq.gz,/data/healthy_2_R2.fastq.gz
+disease_1,/data/disease_1_R1.fastq.gz,/data/disease_1_R2.fastq.gz
+disease_2,/data/disease_2_R1.fastq.gz,/data/disease_2_R2.fastq.gz
+EOF
